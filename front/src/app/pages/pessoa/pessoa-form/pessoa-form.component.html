@@ -1,0 +1,27 @@
+<app-card [titleCard]="title">
+    <form [formGroup]="form">
+        <div class="container__form">
+            <div class="form-control">
+                <label>Nome:</label>
+                <input formControlName="nome" type="text" max="30"/>
+            </div>
+            <div class="form-control">
+                <label>Email:</label>
+                <input formControlName="email" type="email"/>
+            </div>
+            <div class="form-control">
+                <label>Categoria:</label>
+                <select formControlName="categoria">
+                    <option>Selecione</option>
+                    <option [value]="1">Admin</option>
+                    <option [value]="2">Gerente</option>
+                    <option [value]="3">Normal</option>
+                </select>
+            </div>
+        </div>
+        <div class="mt-5">
+            <button (click)="salvaPessoa()" class="btn primary">Adicionar</button>
+            <button (click)="goBack()" class="btn secondary">Cancelar</button>
+        </div>
+    </form>
+</app-card>

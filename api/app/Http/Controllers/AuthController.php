@@ -52,9 +52,9 @@ class AuthController extends Controller
             'status' => 'success',
             'message' => 'User created successfully',
             'user' => $user,
-            'authorisation' => [
-                'token' => $token,
-                'type' => 'bearer',
+            'authorization' => [
+                'access_token' => $token,
+                'token_type' => 'bearer',
             ]
         ]);
     }

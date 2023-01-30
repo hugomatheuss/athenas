@@ -25,8 +25,8 @@ Para instalar as dependências da API e do Front, popular o banco, rode o comand
     ./tests.sh
 
 ## Routes
-- POST `/api/login` - Realiza o login do usuário
-- POST `/api/register` - Cadastra um usuário
+- POST `/api/login` - Realiza o login do usuário (email e senha)
+- POST `/api/register/` - Cadastra um usuário
 - GET `/api/logout` - Realiza o logout
 
 - GET `/api/pessoas` - Todos as pessoas
