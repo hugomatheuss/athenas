@@ -8,7 +8,7 @@ Entrando no diretório do projeto
 
     cd athenas
 
-Para instalar as dependências da API e do Front rode o comando abaixo
+Para instalar as dependências da API e do Front, popular o banco, rode o comando abaixo
     
     sudo chmod +x ./install.sh
     sudo chmod +x ./start.sh
@@ -17,12 +17,12 @@ Para instalar as dependências da API e do Front rode o comando abaixo
     ./start.sh
 
 
-Acessando em 
-
 ----------
 ## Testes
 
-php artisan test --filter PessoaTest
+    sudo chmod +x ./tests.sh
+
+    ./tests.sh
 
 ## Routes
 - POST `/api/login` - Realiza o login do usuário
