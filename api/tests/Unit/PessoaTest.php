@@ -28,7 +28,7 @@ class PessoaTest extends TestCase
             'Accept' => 'application/json'
         ])
             ->json('POST', route('api.pessoas.store'), $pessoa->toArray())
-            ->assertStatus(201);
+            ->assertStatus(200);
     }
 
     public function test_can_show_pessoa()
